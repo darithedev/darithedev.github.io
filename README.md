@@ -1,2 +1,2 @@
 ## Dari's landing page
-landing page for my portfolio
+This is a landing page for my portfolio. Will be updated to reflect my projects. 
