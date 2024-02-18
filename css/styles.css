@@ -83,6 +83,7 @@ main > .tagline {
 .button {
 	display: inline-block;
 	cursor: pointer;
+	padding: 10px 20px;
 }
 
 .bar1, .bar2, .bar3 {
