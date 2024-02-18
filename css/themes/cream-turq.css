@@ -5,6 +5,10 @@ main {
 	color: #145369;
 }
 
+.bar1, .bar2, .bar3 {
+	background-color: #145369;
+}
+
 .icons-social a {
 	color: #145369;
 }

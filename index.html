@@ -8,33 +8,58 @@
 	<title>ariTheDev</title>
 
 	<link rel="icon" href="favicon.ico?" type="image/png" />
-
+	
 	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/ced32ef8cd.js" crossorigin="anonymous"></script>
+	<!-- <link href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" rel="stylesheet"> -->
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/themes/cream-turq.css">
-	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-grey.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/cream-turq.css"> -->
 </head>
 <body>
 	<main>
+		<div class="button" onclick="myFunction(this)">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+			
+			<div id="myDropdown" class="dropdown-content">
+				<a href="#">Million</a>
+				<a href="#">About</a>
+				<a href="#">Contact</a>
+			</div>
+		</div>
+		
+		<script>
+			function myFunction(x) {
+				x.classList.toggle("change");
+				document.getElementById("myDropdown").classList.toggle("show");
+			}
+
+			// Close the dropdown menu if the user clicks menu button
+			window.onclick = function(event) {
+				if (!event.target.matches('.button')) {
+					var dropdowns = document.getElementsByClassName("dropdown-content");
+					var i;
+					for (i = 0; i < dropdowns.length; i++) {
+						var openDropdown = dropdowns[i];
+						if (openDropdown.classList.contains('change')) {
+							openDropdown.classList.remove('show');
+						}
+					}
+				}
+			}
+		</script>
+
 		<div class="intro">Hello, I'm Dari</div>
 		<div class="tagline">Full-Stack Developer | Tech Enthusiast | LIfelong Learner | 💻</div>
 		<div class="tagline">Portfolio coming soon...</div>
 		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
 		<div class="icons-social">
 			<a target="_blank" href="https://github.com/darithedev">
-        <i class="fab fa-github" aria-hidden="true" title="Github"></i>
-        <span class="sr-only">Github</span>
-    </div>
+        	<i class="fab fa-github" aria-hidden="true" title="Github"></i>
+        	<span class="sr-only">Github</span>
+			</div>
 	</main>
 </body>
 </html>
