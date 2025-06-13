@@ -1,4 +1,4 @@
 ## Dari's landing page
 This is a landing page for my portfolio. Will be updated to reflect my projects. 
 
-darithedev.github.io
+Link to my [portfolio](https://darithedev.github.io)
